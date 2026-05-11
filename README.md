@@ -98,4 +98,4 @@ If you find this repository helpful, don't forget to:
 
 Developed for learning and practicing concepts of: Nada Al-Eaqrab
 
-**Compiler Construction (CS510)** 🚀
+**Compiler Construction (CS510)** 
