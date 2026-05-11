@@ -32,7 +32,7 @@ Solutions for:
 
 ---
 
-# 🚀 How to Run
+#  How to Run
 
 To execute any Flex (`.l`) file in this repository, follow these steps in the terminal:
 
