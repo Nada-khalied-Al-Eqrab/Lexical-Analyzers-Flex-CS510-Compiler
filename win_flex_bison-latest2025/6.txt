@@ -1,0 +1,14 @@
+%%
+a*b*c*    {printf("<%s ,%s>","1",yytext);}
+a*b*     {printf("<%s ,%s>","2",yytext);}
+c*a*     {printf("<%s ,%s>","3",yytext);}
+%%
+int yywrap()
+{
+return 1;
+}
+int main()
+{
+printf(" Good Morning, Please Enter Your Code ....");
+yylex();
+}

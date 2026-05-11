@@ -1,0 +1,17 @@
+
+%%
+(a|c|b)*	 {printf("<%s ,%s>","1",yytext);}
+a*|b*|c*	  {printf("<%s ,%s>","2",yytext);}
+
+
+%%
+int yywrap()
+{
+return 1;
+}
+int main()
+{
+printf("Welcome To Flex...Please Enter Your Code:\n");
+yylex();
+return 0;
+}

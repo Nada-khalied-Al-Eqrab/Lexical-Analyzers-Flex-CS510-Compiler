@@ -1,0 +1,32 @@
+%{
+int count=1;
+%}
+d   [0-9]+
+d1  [0-9]
+res if|switch|while
+id  [A-Za-z]+
+com \/\/.*\n
+%%
+
+{d}  {printf("num");}
+{d1} {printf("digit");} 
+{res}  {printf("<%s,reserved>",yytext);}
+{id}  {printf("<%s,id>",yytext);}
+"="  {printf("<=,Eq>");}
+";"  {printf("<;,Semi>");}
+{com} {printf("%d",count++);}
+.+    {printf("Error");} 
+
+
+
+%%
+int yywrap()
+{
+return 1;
+}
+
+int main()
+{
+yylex();
+
+}

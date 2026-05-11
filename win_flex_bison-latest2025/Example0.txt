@@ -1,0 +1,14 @@
+%%
+"=="	{printf("<==,Compare>");}
+";"  {printf("<;,SemiColon>");}  
+"@"	{printf("<@,atSymbol>");} 
+%%
+int yywrap()
+{
+return 1;
+}
+int main()
+{
+printf(" Good Morning, Please Enter Your Code ....");
+yylex();
+}

@@ -1,0 +1,20 @@
+%%
+a(ba)*          {printf("%s\n",yytext);}
+
+b*(ab)*		{printf("%s\n",yytext);}
+
+abd			{printf("%s\n",yytext);}
+
+d+			{printf("%s\n",yytext);}
+
+%%
+int yywrap()
+{
+return 1;
+}
+int main()
+{
+printf("Welcome To Flex...Please Enter Your Code:\n");
+yylex();
+return 0;
+}
