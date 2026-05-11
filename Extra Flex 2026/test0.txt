@@ -1,0 +1,13 @@
+%%
+"+"  {printf("heeeeeyyyyyyyyyyyyyyyy");}
+%%
+int yywrap()
+{
+return 1;
+}
+int main()
+{
+printf("Welcome to CS510 WINFLEX");
+printf("Enter Your code here");
+yylex();
+}

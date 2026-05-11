@@ -1,0 +1,16 @@
+
+%%
+"+"	{printf("<+,Plus>");}
+"-"	{printf("<+,Minus>");}
+";"	{printf("<+,Semi>");}
+%%
+int yywrap()
+{
+return 1;
+}
+int main(){
+printf("Welecome to CS510 \n");
+printf("Enter Your Code Here.............");
+yylex();
+
+}

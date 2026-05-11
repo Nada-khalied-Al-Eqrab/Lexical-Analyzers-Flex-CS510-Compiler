@@ -1,0 +1,19 @@
+
+%%
+aa               { printf("1"); }
+ b?a+b?       { printf("2"); }
+b?a*b?           { printf("3"); } 
+aa*                  { printf("4"); } 
+
+
+%%
+int yywrap()
+{
+return 1;
+}
+int main()
+{
+printf("Welcome To Flex...Please Enter Your Code:\n");
+yylex();
+return 0;
+}
